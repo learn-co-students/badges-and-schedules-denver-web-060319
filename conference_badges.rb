@@ -25,12 +25,10 @@ end
 
 def printer(names)
     # compile = [batch_badge_creator(names).concat(assign_rooms(names))]
-    baba_cre = batch_badge_creator(names)
-    baba_cre.each do |output|
+    batch_badge_creator(names).each do |output|
         puts output
     end
-    ass_ro = assign_rooms(names)
-    ass_ro.each do |output|
+    assign_rooms(names).each do |output|
         puts output
     end
 end
